@@ -23,10 +23,15 @@ class Test{
 }
 public class CallByValueVsCallByReference {
     public static void main(String args[]){
-            Test ob = new Test();
+            Test ob = new Test(1,2);
             int a = 15, b = 20;
             System.out.println("a and b before " + a + " " + b);
             ob.noChange(a, b);
             System.out.println("a and b after " +a + " " + b);
+
+        System.out.println("ob.a and ob.b before " + ob.a + " " + ob.b);
+        ob.change(ob);
+        System.out.println("ob.a and ob.b after " + ob.a + " " + ob.b);
+
     }
 }
