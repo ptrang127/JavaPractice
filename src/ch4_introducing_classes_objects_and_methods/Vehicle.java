@@ -5,7 +5,7 @@ package ch4_introducing_classes_objects_and_methods;
  */
 public class Vehicle {
 
-    int passengers;
+    public int passengers;
     int fuelcap;
     int mpg;
 

@@ -30,7 +30,6 @@ class VarLengthArgs {
             System.out.println("arg[" + i + "]: " + v[i]);
         }
     }
-
     public static void main(String args[]) {
         vaTest(1);
         vaTest(0,1, 1);

@@ -1,0 +1,289 @@
+javapractice, ptrang127, java: a beginner's guide sixth edition by herbert schildt
+
+here are some key words and concepts to understand in java
+
+===========
+CHAPTER 1
+===========
+
+- class
+a class is the basic unit of encapsulation. class name { }. it can contain methods and variables
+
+- method
+a subroutine in java. also known as a function
+
+- public static void main(String args[]) { }
+all java applications begin execution by calling main
+
+- public
+access modifier that determines how other parts of the program can interact with the members of the class
+
+- private
+an access modifier that only allows members within its class to access it
+
+- void 
+tells the compiler that nothing will be returned
+
+- System.out.println()
+System is a predefined class that provides access to the system. out is the output stream that is connected 
+to the console. println() is a method
+
+- int
+variable to store integers (whole numbers)
+
+- double
+variable type to store fractional values
+
+- if(condition) { }
+a control statement used to navigate the flow of the program. if the conditions within () are true, the program
+then the proceeding statement is executed
+
+- for(initialization; condition; iteration) { }
+this is a loop used to iterate through a loop control variable
+
+===========
+CHAPTER 2
+===========
+
+- boolean
+represents true/false values
+
+- byte
+8-bit integer
+
+- char
+character
+
+- double
+double-precision floating point
+
+- float
+single-precision floating point
+
+- int
+integer
+
+- long
+long integer
+
+- short
+short integer
+
+- +
+addition
+
+- -
+subtraction
+
+- *
+multiplication
+
+- /
+division
+
+- %
+modulo
+
+- ++
+increment
+
+- --
+decrement
+
+- ==
+equal to
+
+- !=
+not equal to
+
+- >
+greater than
+
+- <
+less than
+
+- >=
+greater than or equal to
+
+- <=
+less than or equal to
+
+- &
+AND
+
+- |
+OR
+
+- ^
+XOR
+
+- ||
+short-circuit OR
+
+- &&
+short-circuit AND
+
+- !
+NOT
+
+===========
+CHAPTER 3
+===========
+
+- switch(choice){case break case break}
+control statement used to execute statements based on a certain variable
+
+- default
+the last case
+
+- while(condition) { }
+while loop used to execute a statement while a condition is true
+
+- do { } while( )
+a variation of the while loop. ensures that the loop while always execute at least once
+
+===========
+CHAPTER 4
+===========
+
+- form of a class
+class classname {
+	type var1;
+	type var2;
+
+	type method1(parameters) {
+
+	}
+	type method2(parameters) {
+
+	}
+}
+
+- object
+an instance of a class created by
+classname objectname = new classname(constructor);
+
+- new
+dynamically allocates memory for an object and returns a reference to it
+
+- protected void finalize() { }
+call a method to execute right before the object's final destruction
+
+- this
+keyword to pass reference to the invoking object
+
+===========
+CHAPTER 5
+===========
+
+- array
+collection of variables of the same type referred to by a common name
+type array-name[] = new type[size];
+or
+type array-name[] = {variable, variable, variable};
+
+- bubble sort
+a sorting algorithm that takes O(n^2) time and runs at best O(n)
+
+- irregular arrays
+arrays with differing dimensions
+
+- .length
+used to find the number of elements in array
+
+- String
+an object that contains a string of characters
+immutable
+
+- args[]
+command line arguments
+args[0] is the first argument
+
+===========
+CHAPTER 6
+===========
+
+- access modifier
+member access control
+
+- public
+member can be accessed by any other code in program
+
+- private
+member can be accessed only by other members of its class
+
+- protected
+used in inheritance
+
+- method overloading
+when two or more methods share the same name but with different parameters
+
+- recursion
+when a method calls itself
+
+- static
+when a member is declared static, it can be accessed before any objects of its class are created and without reference to any object
+all objects share the same static value
+
+- quick sort
+one of the most efficient sorting algorithms
+
+- nested class
+a class that is a member inside of another class
+an inner class can access the members of its enclosing class
+
+- method(type ... v)
+variable length arguments
+
+===========
+CHAPTER 7
+===========
+- inheritance
+create a general class thatt defines treats common to a set of related items
+
+- superclass
+the class that is inherited
+
+- subclass
+the class that does the inheriting
+
+- extends
+the command to inherit
+subclass extends superclass
+
+- contructors with inheritance
+super class constructor constructs the superclass portion
+subclass constructor constructs the subclass portion
+
+- super
+a subclass can call a constructor defined by its superclass
+
+superclass(int w, int h){ ... }
+ 
+subclass(int w, int h){
+	super(w, h);
+}
+
+super can also be used to access superclass members
+super.membername
+
+- method overriding
+when a method in a subclass has the same return type and signature as a method in its superclass, 
+then the method in the subclass is said to override the method in the superclass
+
+method overriding allows for run-time polymorphism
+
+- polymorphism
+when an object is able to take on multiple forms
+dog IS-A animal
+dog IS-a pet
+
+- abstract class
+a superclass that has a generalized form that will be shared by all of its subclasses
+an abstract class can contain abstract methods
+if a subclass inherits the abstract method, it MUST override the method
+
+- final
+used to prevent a method from being overridden or a class from being inherited
+
+

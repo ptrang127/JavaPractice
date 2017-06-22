@@ -1,2 +1,2 @@
 # javapractice
-java a beginner's guide sixth edition herbet schildt
+java a beginner's guide sixth edition herbert schildt
